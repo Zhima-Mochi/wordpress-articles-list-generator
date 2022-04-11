@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  app:
+    build: list-generator/
+    env_file:
+      - config.env
+    volumes:
+      - ./output:/output
